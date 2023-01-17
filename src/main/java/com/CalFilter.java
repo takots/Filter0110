@@ -28,7 +28,7 @@ public class CalFilter implements Filter {
  
 			response.setContentType("text/html"); 
 	    	PrintWriter out = response.getWriter();
-			 
+			// tttttttttttttttttttttt
 	    	//get parameters from request object.
 			String num1 = request.getParameter("num1").trim();
 			String num2 = request.getParameter("num2").trim();
