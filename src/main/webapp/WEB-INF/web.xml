@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <servlet>
+    <servlet-name>PlusServlet</servlet-name>
+    <servlet-class>com.PlusServlet</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>PlusServlet</servlet-name>
+    <url-pattern>/PlusServlet</url-pattern>
+  </servlet-mapping>
+ 
+  <filter>  
+  	<filter-name>CalFilter</filter-name>  
+  	<filter-class>com.CalFilter</filter-class>  
+  </filter>  
+ 
+  <filter-mapping>  
+  	<filter-name>CalFilter</filter-name>  
+  	<url-pattern>/PlusServlet</url-pattern>  
+  </filter-mapping>  
+ 
+   <welcome-file-list>
+    <welcome-file>calculate.html</welcome-file>
+  </welcome-file-list>
+ 
+</web-app>
